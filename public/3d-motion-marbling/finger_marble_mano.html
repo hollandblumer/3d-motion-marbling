@@ -572,8 +572,10 @@
       const apiParam = urlParams.get("api");
       const API_BASE = (apiParam || "").replace(/\/$/, "");
       const SERVER_FIT = urlParams.get("fit") === "1";
-      const MANO_ONNX_URL =
-        "/3d-motion-marbling/mano-landmark-regressor.onnx";
+      const MANO_ONNX_URL = new URL(
+        "./mano-landmark-regressor.onnx",
+        window.location.href,
+      ).href;
       const SESSION_ID =
         crypto.randomUUID?.() || `${Date.now()}-${Math.random()}`;
       function dataUrl(path) {
