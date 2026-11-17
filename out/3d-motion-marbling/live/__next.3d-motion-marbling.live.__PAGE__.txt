@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[97367,["/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"fixed inset-0 h-dvh w-screen overflow-hidden bg-[#f3eddb] text-[#f3eddb]","children":["$","iframe",null,{"src":"../finger_marble_mano.html?v=balanced-local-python-mano-live&api=http%3A%2F%2F127.0.0.1%3A8000&fit=1","title":"Live 3D Motion Marbling","className":"fixed inset-0 h-dvh w-screen border-0","allow":"camera; fullscreen"}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"fksUAby7umvRIy9xXPdEb"}
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"fixed inset-0 h-dvh w-screen overflow-hidden bg-[#f3eddb] text-[#f3eddb]","children":["$","iframe",null,{"src":"../finger_marble_mano.html?v=balanced-local-python-mano-live&api=http%3A%2F%2F127.0.0.1%3A8000&fit=1","title":"Live 3D Motion Marbling","className":"fixed inset-0 h-dvh w-screen border-0","allow":"camera; fullscreen"}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"PcqKaJDOjC3zQNVQn5FEc"}
 4:null
