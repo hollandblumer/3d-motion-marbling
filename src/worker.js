@@ -108,6 +108,20 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === "/__login" && request.method === "POST") {
+      const clientKey = request.headers.get("CF-Connecting-IP") || "unknown";
+      const { success } = await env.LOGIN_RATE_LIMITER.limit({ key: clientKey });
+      if (!success) {
+        return secure(
+          new Response("Too many password attempts. Try again in one minute.", {
+            status: 429,
+            headers: {
+              "Content-Type": "text/plain; charset=utf-8",
+              "Retry-After": "60",
+            },
+          }),
+        );
+      }
+
       const form = await request.formData();
       const submittedPassword = String(form.get("password") || "");
       if (await passwordsMatch(submittedPassword, env.SITE_PASSWORD)) {
